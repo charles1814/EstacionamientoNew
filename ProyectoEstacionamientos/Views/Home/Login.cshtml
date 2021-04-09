@@ -1,0 +1,44 @@
+﻿@model ProyectoEstacionamientos.Models.UsuariosModels
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="form-horizontal" style="margin-left:20px" align="center">
+    <div class="row">
+        <div class="col-md-9">
+            <img class="img-responsive" src="~/Data/Img/usr.png" style="height:200px;width:200px" />
+        </div>
+        <div class="col-md-9">
+            <label class="h1" style="font-family:'Segoe UI'">Iniciar Sesión</label>
+        </div>
+        <div class="col-md-9">
+            @using (@Html.BeginForm("LoginUsuarios", "Home", FormMethod.Post))
+            {
+                <div class="col-md-9">
+                    @Html.TextBoxFor(x => x.Cliente, new { @class = "form-control", type = "number", required = "required", style = "width:400px", placeholder = "Número de Cliente" })
+                </div>
+                <div class="col-md-9" style="margin-top:20px">
+                    @Html.TextBoxFor(x => x.Usuario, new { @class = "form-control", type = "text", required = "required", style = "width:400px", placeholder = "Usuario" })
+                </div>
+                <div class="col-md-9" style="margin-top:20px">
+                    @Html.TextBoxFor(x => x.Clave, new { @class = "form-control", type = "password", required = "required", style = "width:400px", placeholder = "Contraseña" })
+                </div>
+                if (ViewData["Error"] != null)
+                {
+                    <div class="col-md-9" style="margin-top:20px">
+                        <label class="h3 text-danger">Error al iniciar Sesión. Usuario o Contraseña incorrectos :(</label>
+                    </div>
+
+                }
+                <div class="col-md-9" style="margin:40px 0px 40px 0px">
+                    <input type="submit" value="Ingresar" class="btn btn-lg btn-primary" />
+                </div>
+
+            }
+
+        </div>
+
+        
+    </div>
+</div>
+

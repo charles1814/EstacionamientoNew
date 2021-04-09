@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "ClientesDashboard";
+    Layout = "~/Views/Shared/_LayoutUsuarios.cshtml";
+}
+<div class="jumbotron">
+
+</div>
+
+<div class="row">
+    <div class="col-md-4" align="center">
+        <div class="card bg-light card-block" style="width:16rem;height:16rem">
+            <div class="card-body">
+                <img class="card-img-top" src="~/Data/Img/ing.png" style="height:100px; width:100px" alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <p class="card-text"><h2>Ingreso</h2></p>
+            </div>
+            <div class="card-footer">
+                @Html.ActionLink("Ir a Ingreso","Ingresos","Menu", new {@area="" }, new {@class="btn btn-lg btn-outline-primary" })
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4" align="center">
+        <div class="card bg-light card-block" style="width:16rem;height:16rem">
+            <div class="card-body">
+                <img class="card-img-top" src="~/Data/Img/car.png" style="height:100px; width:100px" alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <p class="card-text"><h2>Salida</h2></p>
+            </div>
+            <div class="card-footer">
+                @Html.ActionLink("Ir a Salida", "Ingresos", "Menu", new { @area = "" }, new { @class = "btn btn-lg btn-outline-primary" })
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4" align="center">
+        <div class="card bg-light card-block" style="width:16rem;height:16rem">
+            <div class="card-body">
+                <img class="card-img-top" src="~/Data/Img/reporte.png" style="height:100px; width:100px" alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <p class="card-text"><h2>Reportes</h2></p>
+            </div>
+            <div class="card-footer">
+                @Html.ActionLink("Ir a Reportes", "Ingresos", "Menu", new { @area = "" }, new { @class = "btn btn-lg btn-outline-primary" })
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ee45a1be413e423cb11c7e97dff15fa6" Name="Diagram1">
+        <EntityTypeShape EntityType="ESTACIONAMIENTOSModel.CajaDiaria" Width="1.5" PointX="5.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTACIONAMIENTOSModel.Clientes" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTACIONAMIENTOSModel.ClientesTerceros" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTACIONAMIENTOSModel.Tarifas" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTACIONAMIENTOSModel.TiposVehiculo" Width="1.5" PointX="3" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTACIONAMIENTOSModel.Turnos" Width="1.5" PointX="3" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTACIONAMIENTOSModel.Usuarios" Width="1.5" PointX="3" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTACIONAMIENTOSModel.Vehiculos" Width="1.5" PointX="8.25" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTACIONAMIENTOSModel.VehiculosClientes" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <AssociationConnector Association="ESTACIONAMIENTOSModel.FK__CajaDiari__idcli__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTACIONAMIENTOSModel.FK__CajaDiari__idusu__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTACIONAMIENTOSModel.FK__ClientesT__idcli__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTACIONAMIENTOSModel.FK__Tarifas__idclien__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTACIONAMIENTOSModel.FK__TiposVehi__idcli__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTACIONAMIENTOSModel.FK__Turnos__idclient__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTACIONAMIENTOSModel.FK__Usuarios__idclie__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTACIONAMIENTOSModel.FK__Vehiculos__idcli__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTACIONAMIENTOSModel.FK__ClientesT__idveh__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTACIONAMIENTOSModel.FK__Vehiculos__idtar__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTACIONAMIENTOSModel.FK__Vehiculos__idtip__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTACIONAMIENTOSModel.FK__Vehiculos__idusu__45F365D3" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

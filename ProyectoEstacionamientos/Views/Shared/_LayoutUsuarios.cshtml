@@ -1,0 +1,64 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - EstacionamientoSoft</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" style="margin-left:90px"><img class="img-fluid" style="height:45px;width:45px" src="~/Data/Img/logo.png" />EstacionamientoSoft</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active px-3" aria-hidden="true">
+                    @Html.ActionLink("Dashboard", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item px-3" aria-hidden="true">
+                    @Html.ActionLink("Ingreso", "About", "Home", new { area = "" }, new { @class = "nav-link" })
+
+                </li>
+                <li class="nav-item px-3" aria-hidden="true">
+                    @Html.ActionLink("Salida", "About", "Home", new { area = "" }, new { @class = "nav-link" })
+
+                </li>
+                <li class="nav-item px-3" aria-hidden="true">
+                    @Html.ActionLink("Reportes", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })
+
+                </li>
+                <li class="nav-item px-3" aria-hidden="true">
+                    @Html.ActionLink("Configuraciones", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })
+
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <h3 class="h3 text-light" style=" margin-right:15px">Hola  @ProyectoEstacionamientos.Models.DatosUsuarios.Nombre </h3>
+                @Html.ActionLink("Logout", "Login", "Home", new { area = "" }, new { @class = "btn btn-lg btn-outline-danger" })
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="card-footer" style="text-align:center">
+            <p>&copy; @DateTime.Now.Year - Proyecto Estacionamientos</p>
+        </footer>
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/Feather")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
